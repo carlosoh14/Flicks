@@ -2,13 +2,13 @@
 
 **Flicks** is a movies app using the [The Movie Database API](http://docs.themoviedb.apiary.io/#).
 
-Time spent: **X** hours spent in total
+Time spent: **10** hours spent in total
 
 ## User Stories
 
 The following **required** functionality is complete:
 
-- [ ] User can view a list of movies currently playing in theaters from The Movie Database.
+- [x] User can view a list of movies currently playing in theaters from The Movie Database.
 - [ ] Poster images are loaded using the UIImageView category in the AFNetworking library.
 - [ ] User sees a loading state while waiting for the movies API.
 - [ ] User can pull to refresh the movie list.
@@ -37,9 +37,11 @@ GIF created with [LiceCap](http://www.cockos.com/licecap/).
 
 Describe any challenges encountered while building the app.
 
+I was not able to import AFNetworking, had an issue to keep going forward because it did not let me build after it.
+
 ## License
 
-    Copyright [yyyy] [name of copyright owner]
+    Copyright [2016] [Carlos Osco]
 
     Licensed under the Apache License, Version 2.0 (the "License");
     you may not use this file except in compliance with the License.
