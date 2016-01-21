@@ -7,17 +7,18 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		10044B6CF1B3616FE02C773F /* Pods_MovieViewer.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 7B9C7A2716E53E3AE8017C29 /* Pods_MovieViewer.framework */; };
 		BC9E80FE1C4669E800DF93F1 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = BC9E80FD1C4669E800DF93F1 /* AppDelegate.swift */; };
 		BC9E81031C4669E800DF93F1 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = BC9E81011C4669E800DF93F1 /* Main.storyboard */; };
 		BC9E81051C4669E800DF93F1 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = BC9E81041C4669E800DF93F1 /* Assets.xcassets */; };
 		BC9E81081C4669E800DF93F1 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = BC9E81061C4669E800DF93F1 /* LaunchScreen.storyboard */; };
 		BC9E81101C466ACC00DF93F1 /* MoviesViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = BC9E810F1C466ACC00DF93F1 /* MoviesViewController.swift */; };
 		BC9E81131C467AFE00DF93F1 /* MovieCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = BC9E81121C467AFE00DF93F1 /* MovieCell.swift */; };
-		CA2409DCC9F965CFDA432367 /* libPods-MovieViewer.a in Frameworks */ = {isa = PBXBuildFile; fileRef = CD7D9580DB2600F65CCAC157 /* libPods-MovieViewer.a */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
 		2FC4A5CB8A3058A749E9AB4A /* Pods-MovieViewer.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-MovieViewer.release.xcconfig"; path = "Pods/Target Support Files/Pods-MovieViewer/Pods-MovieViewer.release.xcconfig"; sourceTree = "<group>"; };
+		7B9C7A2716E53E3AE8017C29 /* Pods_MovieViewer.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_MovieViewer.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		BC9E80FA1C4669E800DF93F1 /* MovieViewer.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = MovieViewer.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		BC9E80FD1C4669E800DF93F1 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		BC9E81021C4669E800DF93F1 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
@@ -26,7 +27,6 @@
 		BC9E81091C4669E800DF93F1 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		BC9E810F1C466ACC00DF93F1 /* MoviesViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MoviesViewController.swift; sourceTree = "<group>"; };
 		BC9E81121C467AFE00DF93F1 /* MovieCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MovieCell.swift; sourceTree = "<group>"; };
-		CD7D9580DB2600F65CCAC157 /* libPods-MovieViewer.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-MovieViewer.a"; sourceTree = BUILT_PRODUCTS_DIR; };
 		D1778957A88152E6A431DC70 /* Pods-MovieViewer.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-MovieViewer.debug.xcconfig"; path = "Pods/Target Support Files/Pods-MovieViewer/Pods-MovieViewer.debug.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
@@ -35,7 +35,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				CA2409DCC9F965CFDA432367 /* libPods-MovieViewer.a in Frameworks */,
+				10044B6CF1B3616FE02C773F /* Pods_MovieViewer.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -54,7 +54,7 @@
 		B0505C8DD4112EC7BC98B183 /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
-				CD7D9580DB2600F65CCAC157 /* libPods-MovieViewer.a */,
+				7B9C7A2716E53E3AE8017C29 /* Pods_MovieViewer.framework */,
 			);
 			name = Frameworks;
 			sourceTree = "<group>";
