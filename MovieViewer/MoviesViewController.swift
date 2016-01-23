@@ -22,6 +22,9 @@ class MoviesViewController: UIViewController, UITableViewDataSource, UITableView
         tableView.dataSource = self
         tableView.delegate = self
         
+        // Display HUB right before next request is made
+        MBProgressHUD.showHUDAddedTo(self.view, animated: true)
+        
         // Initialize a UIRefreshControl
         let refreshControl = UIRefreshControl()
         refreshControl.addTarget(self, action: "refreshControlAction:", forControlEvents: UIControlEvents.ValueChanged)
@@ -36,48 +39,24 @@ class MoviesViewController: UIViewController, UITableViewDataSource, UITableView
             delegateQueue:NSOperationQueue.mainQueue()
         )
         
-        // Display HUB right before next request is made
-        MBProgressHUD.showHUDAddedTo(self.view, animated: true)
-       
+        //attempt1 to do part 3
         
-        // try#1 -> added good?? ask
-        func refreshControlAction(refreshControl: UIRefreshControl){
-            // ... Create the NSURLRequest (myRequest) ...
-            
-            // Configure session so that completion handler is executed on main UI thread
-            let session = NSURLSession(
-                configuration: NSURLSessionConfiguration.defaultSessionConfiguration(),
-                delegate:nil,
-                delegateQueue:NSOperationQueue.mainQueue()
-            )
-            let task : NSURLSessionDataTask = session.dataTaskWithRequest(request,
-                completionHandler: { (data, response, error) in
-                    
-                    // ... Use the new data to update the data source ...
-                    
-                    // Reload the tableView now that there is new data
-                    self.tableView.reloadData()
-                    
-                    // Tell the refreshControl to stop spinning
-                    refreshControl.endRefreshing()
-            });
-            task.resume()
-        }
-        
-        // try #1 -> upto here.
+        refreshControl.addTarget(self, action: "refreshControlAction:", forControlEvents: UIControlEvents.ValueChanged)
+        tableView.insertSubview(refreshControl, atIndex: 0)
         
        
         
         let task : NSURLSessionDataTask = session.dataTaskWithRequest(request,
             completionHandler: { (dataOrNil, response, error) in
+                // Hide HUD once network request comes back (must be done on main UI thread)
+                MBProgressHUD.hideHUDForView(self.view, animated: true)
+
                 if let data = dataOrNil {
                     if let responseDictionary = try! NSJSONSerialization.JSONObjectWithData(
                         data, options:[]) as? NSDictionary {
                             print("response: \(responseDictionary)")
                             
-                            // Hide HUD once network request comes back (must be done on main UI thread)
-                            MBProgressHUD.hideHUDForView(self.view, animated: true)
-                    
+                            
                             
                             self.movies = responseDictionary["results"] as? [NSDictionary]
                             self.tableView.reloadData()
@@ -128,7 +107,15 @@ class MoviesViewController: UIViewController, UITableViewDataSource, UITableView
         return cell
     }
     
-
+    func refreshControlAction(refreshControl: UIRefreshControl) {
+        
+        // Make network request to fetch latest data
+        
+        // Do the following when the network request comes back successfully:
+        // Update tableView data source
+        self.tableView.reloadData()
+        refreshControl.endRefreshing()
+    }
     
 
     
