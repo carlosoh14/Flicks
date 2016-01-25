@@ -18,6 +18,9 @@ class MoviesViewController: UIViewController, UITableViewDataSource, UITableView
     var movies: [NSDictionary]?
     var filteredData: [NSDictionary]?
     var endpoint: String!
+    //added recently to do the cell selected
+    
+    //
     
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -127,6 +130,19 @@ class MoviesViewController: UIViewController, UITableViewDataSource, UITableView
     
         }
     
+        //trying to add the selected view in cell Colored
+        
+        
+        let backgroundView = UIView()
+        backgroundView.backgroundColor = UIColor.lightGrayColor()
+        cell.selectedBackgroundView = backgroundView
+        
+        //finished here
+        
+        
+        
+        
+        
         print("row \(indexPath.row)")
         
         return cell
