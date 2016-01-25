@@ -1,8 +1,8 @@
-# Project 1 - *Flicks*
+# Project 1 - *MovieViewer*
 
 **Flicks** is a movies app using the [The Movie Database API](http://docs.themoviedb.apiary.io/#).
 
-Time spent: **10** hours spent in total
+Time spent: **25** hours spent in total
 
 ## User Stories
 
@@ -29,7 +29,7 @@ The following **additional** features are implemented:
 
 Here's a walkthrough of implemented user stories:
 
-<img src='http://i.imgur.com/link/to/your/gif/file.gif' title='Video Walkthrough' width='' alt='Video Walkthrough' />
+![Walkthrough] (MovieViewer.gif)
 
 GIF created with [LiceCap](http://www.cockos.com/licecap/).
 
@@ -37,7 +37,7 @@ GIF created with [LiceCap](http://www.cockos.com/licecap/).
 
 Describe any challenges encountered while building the app.
 
-I was not able to import AFNetworking, had an issue to keep going forward because it did not let me build after it.
+I have a pod file corrupted in my iMac, so I had to use another computer while waiting for someone to help me fix my issue in my iMac. The corrupted file had me stuck during the required feautures for a very long time. I wasn't able to do the AFNetworking pod run corrently.'
 
 ## License
 
