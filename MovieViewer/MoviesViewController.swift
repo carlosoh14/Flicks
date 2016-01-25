@@ -149,6 +149,8 @@ class MoviesViewController: UIViewController, UITableViewDataSource, UITableView
         tableView.reloadData()
     }
     
+    
+    //Part2-week2- Unlinked the gesture to anywhere
     //Trying to do the return the keyboard(hide)
     @IBAction func onTap(sender: AnyObject) {
     view.endEditing(true)
@@ -159,14 +161,26 @@ class MoviesViewController: UIViewController, UITableViewDataSource, UITableView
     
     
     
-    /*
+    
     // MARK: - Navigation
 
     // In a storyboard-based application, you will often want to do a little preparation before navigation
     override func prepareForSegue(segue: UIStoryboardSegue, sender: AnyObject?) {
+        
+        let cell = sender as! UITableViewCell
+        let indexPath = tableView.indexPathForCell(cell)
+        let movie = movies![indexPath!.row] //remeber to change tofiltered data since we got the search feature
+        
+        let detailViewController = segue.destinationViewController as! DetailViewController
+        
+        detailViewController.movie = movie
+        
+        
+        print("prepare for segue called")
+        
         // Get the new view controller using segue.destinationViewController.
         // Pass the selected object to the new view controller.
     }
-    */
+    
 
 }
