@@ -13,7 +13,8 @@ class DetailViewController: UIViewController
 {
 //connecting items to be able to communicate to the code
     
-    @IBOutlet weak var posterImageView: UIImageView!
+
+    @IBOutlet weak var posterView: UIImageView!
     @IBOutlet weak var titleLabel: UILabel!
     @IBOutlet weak var overviewLabel: UILabel!
     //done connecting
@@ -31,6 +32,16 @@ class DetailViewController: UIViewController
         
         let overview = movie["overview"]
         overviewLabel.text = overview as? String
+        
+        
+        let baseUrl = "http://image.tmdb.org/t/p/w500"
+        
+        if let posterPath = movie["poster_path"] as? String {
+            
+            let imageUrl = NSURL(string: baseUrl + posterPath)
+            
+            posterView.setImageWithURL(imageUrl!)
+            }
         
         print(movie)
         
