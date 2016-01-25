@@ -60,6 +60,10 @@
                             </searchBar>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
+                        <gestureRecognizers/>
+                        <connections>
+                            <outletCollection property="gestureRecognizers" destination="eWA-Vd-KNX" appends="YES" id="QjQ-i4-g35"/>
+                        </connections>
                     </view>
                     <connections>
                         <outlet property="SearchBar" destination="Zdi-EF-k7O" id="ef4-rG-DUj"/>
@@ -67,6 +71,11 @@
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
+                <tapGestureRecognizer id="eWA-Vd-KNX">
+                    <connections>
+                        <action selector="onTap:" destination="BYZ-38-t0r" id="7t1-7x-Caa"/>
+                    </connections>
+                </tapGestureRecognizer>
             </objects>
             <point key="canvasLocation" x="230" y="356"/>
         </scene>

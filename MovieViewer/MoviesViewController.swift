@@ -149,6 +149,12 @@ class MoviesViewController: UIViewController, UITableViewDataSource, UITableView
         tableView.reloadData()
     }
     
+    //Trying to do the return the keyboard(hide)
+    @IBAction func onTap(sender: AnyObject) {
+    view.endEditing(true)
+    
+    }
+    
 
     
     
