@@ -30,7 +30,7 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
         nowPlayingViewController.endpoint = "now_playing"
         
         nowPlayingNavigationController.tabBarItem.title = "Now Playing"
-        
+        nowPlayingNavigationController.tabBarItem.image = UIImage(named: "now_playing")
         
         //now lets create a new navigation controller (copy & paster the top one, wiht one edit)
         
@@ -39,7 +39,7 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
         topRatedViewController.endpoint = "top_rated"
         
         topRatedNavigationController.tabBarItem.title = "Top Rated"
-        
+        topRatedNavigationController.tabBarItem.image = UIImage(named: "top_rated")
         
         //creating top bar controller
         
