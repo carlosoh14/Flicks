@@ -174,7 +174,22 @@ class MoviesViewController: UIViewController, UITableViewDataSource, UITableView
                 return false
             })
         }
+        
         tableView.reloadData()
+    }
+    
+    // shows keyboard keyboard
+    func searchBarTextDidBeginEditing(searchBar: UISearchBar) {
+        self.SearchBar.setShowsCancelButton(true, animated: true)
+    }
+    func searchBarCancelButtonClicked(searchBar: UISearchBar) {
+        
+        self.SearchBar.setShowsCancelButton(false, animated: true)
+        SearchBar.resignFirstResponder()
+        SearchBar.text = ""
+        filteredData = movies
+        tableView.reloadData()
+    
     }
     
     
