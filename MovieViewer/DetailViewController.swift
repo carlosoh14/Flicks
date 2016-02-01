@@ -40,8 +40,7 @@ class DetailViewController: UIViewController
         let overview = movie["overview"]
         overviewLabel.text = overview as? String
         overviewLabel.sizeToFit()
-        
-        
+              
         let baseUrl = "http://image.tmdb.org/t/p/w500"
         let smallImageUrl = "https://image.tmdb.org/t/p/w45"
         let largeImageUrl = "http://image.tmdb.org/t/p/w500"
@@ -54,7 +53,7 @@ class DetailViewController: UIViewController
             
             
             
-        //added coded here for load small & big
+            //added coded here for load small & big
             
             let smallImageRequest = NSURLRequest(URL: NSURL(string: smallImageUrl)!)
             let largeImageRequest = NSURLRequest(URL: NSURL(string: largeImageUrl)!)
@@ -99,13 +98,14 @@ class DetailViewController: UIViewController
             
             //added coded here for small & big
             
-            }
+        }
         
         print(movie)
         
-
+        
         // Do any additional setup after loading the view.
     }
+    
 
     //aditting optional low resolution
     

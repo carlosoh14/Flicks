@@ -14,8 +14,8 @@
 		BC9E81131C467AFE00DF93F1 /* MovieCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = BC9E81121C467AFE00DF93F1 /* MovieCell.swift */; };
 		F920D8551C56196F004BF9D5 /* DetailViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = F920D8541C56196F004BF9D5 /* DetailViewController.swift */; };
 		F9A7CB541C5DA8A100E78330 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = F9A7CB521C5DA8A100E78330 /* Main.storyboard */; };
-		F9A7CB561C5DA94700E78330 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = F9A7CB551C5DA94700E78330 /* Assets.xcassets */; };
 		F9A7CB5A1C5DAAAF00E78330 /* movie_launchscreen.png in Resources */ = {isa = PBXBuildFile; fileRef = F9A7CB591C5DAAAF00E78330 /* movie_launchscreen.png */; };
+		F9A7CB5E1C5DB31500E78330 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = F9A7CB551C5DA94700E78330 /* Assets.xcassets */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -176,7 +176,7 @@
 			files = (
 				F9A7CB541C5DA8A100E78330 /* Main.storyboard in Resources */,
 				F9A7CB5A1C5DAAAF00E78330 /* movie_launchscreen.png in Resources */,
-				F9A7CB561C5DA94700E78330 /* Assets.xcassets in Resources */,
+				F9A7CB5E1C5DB31500E78330 /* Assets.xcassets in Resources */,
 				BC9E81081C4669E800DF93F1 /* LaunchScreen.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
