@@ -61,7 +61,7 @@ I have a pod file corrupted in my iMac, so I had to use another computer while w
 
 **Flicks ** is a movies app displaying box office and top rental DVDs using [The Movie Database API](http://docs.themoviedb.apiary.io/#).
 
-Time spent: **16** hours spent in total
+Time spent: **18** hours spent in total
 
 ## User Stories
 
@@ -91,7 +91,7 @@ Please list two areas of the assignment you'd like to **discuss further with you
 
 Here's a walkthrough of implemented user stories:
 
-![Walkthrough] (Flicks2.gif)
+![Walkthrough] (Flicks4.gif)
 
 GIF created with [LiceCap](http://www.cockos.com/licecap/).
 

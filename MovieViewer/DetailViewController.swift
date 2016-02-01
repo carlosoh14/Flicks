@@ -40,7 +40,7 @@ class DetailViewController: UIViewController
         let overview = movie["overview"]
         overviewLabel.text = overview as? String
         overviewLabel.sizeToFit()
-              
+        
         let baseUrl = "http://image.tmdb.org/t/p/w500"
         let smallImageUrl = "https://image.tmdb.org/t/p/w45"
         let largeImageUrl = "http://image.tmdb.org/t/p/w500"
